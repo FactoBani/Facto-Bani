@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burhan'Aesthetics - Premium Beauty Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Intro Animation -->
+    <div class="intro-overlay" id="introOverlay">
+        <div class="intro-content">
+            <div class="logo-animation">
+                <span class="logo-letter">B</span>
+                <span class="logo-letter">u</span>
+                <span class="logo-letter">r</span>
+                <span class="logo-letter">h</span>
+                <span class="logo-letter">a</span>
+                <span class="logo-letter">n</span>
+                <span class="logo-letter">'</span>
+                <span class="logo-letter">A</span>
+                <span class="logo-letter">e</span>
+                <span class="logo-letter">s</span>
+                <span class="logo-letter">t</span>
+                <span class="logo-letter">h</span>
+                <span class="logo-letter">e</span>
+                <span class="logo-letter">t</span>
+                <span class="logo-letter">i</span>
+                <span class="logo-letter">c</span>
+                <span class="logo-letter">s</span>
+            </div>
+            <p class="tagline">Discover Your Natural Beauty</p>
+            <div class="intro-product">
+                <div class="product-showcase">
+                    <div class="product-card-intro">
+                        <div class="product-image-intro">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h3>Premium Skincare</h3>
+                        <p>Luxury beauty products for radiant skin</p>
+                    </div>
+                </div>
+            </div>
+            <button class="enter-btn" id="enterBtn">
+                <span>Enter Store</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Website -->
+    <div class="main-content" id="mainContent">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>Burhan'<span>Aesthetics</span></h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <button class="icon-btn search-btn"><i class="fas fa-search"></i></button>
+                    <button class="icon-btn cart-btn" id="cartBtn">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-background">
+                <div class="gradient-orb orb-1"></div>
+                <div class="gradient-orb orb-2"></div>
+                <div class="gradient-orb orb-3"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-badge">New Collection 2024</span>
+                    <h1 class="hero-title">
+                        <span class="title-line">Enhance Your</span>
+                        <span class="title-line highlight">Natural Beauty</span>
+                    </h1>
+                    <p class="hero-description">
+                        Discover premium skincare and beauty products crafted with love and science. 
+                        Experience the transformation you deserve.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#products" class="btn btn-primary">
+                            Shop Now <i class="fas fa-shopping-bag"></i>
+                        </a>
+                        <a href="#about" class="btn btn-secondary">
+                            Learn More <i class="fas fa-info-circle"></i>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3>10K+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>500+</h3>
+                            <p>Products</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>99%</h3>
+                            <p>Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <div class="floating-products">
+                            <div class="float-product float-1">
+                                <div class="product-icon"><i class="fas fa-pump-soap"></i></div>
+                            </div>
+                            <div class="float-product float-2">
+                                <div class="product-icon"><i class="fas fa-spa"></i></div>
+                            </div>
+                            <div class="float-product float-3">
+                                <div class="product-icon"><i class="fas fa-gem"></i></div>
+                            </div>
+                        </div>
+                        <div class="main-hero-image">
+                            <div class="beauty-circle">
+                                <i class="fas fa-female"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products-section" id="products">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Our Collection</span>
+                    <h2 class="section-title">Featured Products</h2>
+                    <p class="section-description">Handpicked premium beauty products for you</p>
+                </div>
+                
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="skincare">Skincare</button>
+                    <button class="filter-btn" data-filter="makeup">Makeup</button>
+                    <button class="filter-btn" data-filter="haircare">Hair Care</button>
+                </div>
+
+                <div class="products-grid" id="productsGrid">
+                    <!-- Products will be loaded dynamically -->
+                </div>
+
+                <div class="load-more-container">
+                    <button class="btn btn-outline" id="loadMoreBtn">
+                        Load More Products <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-images">
+                        <div class="about-img-main">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="about-img-secondary">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <span class="section-subtitle">About Us</span>
+                        <h2 class="section-title">We're Here to Help You Glow</h2>
+                        <p class="about-description">
+                            Burhan'Aesthetics was founded with a simple mission: to provide high-quality, 
+                            affordable beauty products that enhance your natural radiance. We believe 
+                            everyone deserves to feel confident and beautiful.
+                        </p>
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                                <div class="feature-text">
+                                    <h4>100% Organic</h4>
+                                    <p>Natural ingredients only</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-flask"></i></div>
+                                <div class="feature-text">
+                                    <h4>Dermatologist Tested</h4>
+                                    <p>Safe for all skin types</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fas fa-shipping-fast"></i></div>
+                                <div class="feature-text">
+                                    <h4>Fast Shipping</h4>
+                                    <p>Free delivery on orders $50+</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Testimonials</span>
+                    <h2 class="section-title">What Our Customers Say</h2>
+                </div>
+                <div class="testimonials-slider" id="testimonialsSlider">
+                    <!-- Testimonials loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <span class="section-subtitle">Contact Us</span>
+                        <h2 class="section-title">Let's Talk Beauty</h2>
+                        <p>Have questions? We'd love to hear from you.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>123 Beauty Street, Fashion District</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>hello@burhanaesthetics.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" required>
+                                <option value="" disabled selected>Select Subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="order">Order Support</option>
+                                <option value="product">Product Question</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <h2>Burhan'<span>Aesthetics</span></h2>
+                        <p>Your destination for premium beauty and skincare products. 
+                           Enhance your natural beauty with our curated collection.</p>
+                        <div class="payment-methods">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fab fa-cc-apple-pay"></i>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#products">Products</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Customer Service</h4>
+                        <ul>
+                            <li><a href="#">Shipping Info</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe for exclusive offers and updates</p>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <input type="email" placeholder="Your email" required>
+                            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Burhan'Aesthetics. All rights reserved.</p>
+                    <p>Designed with <i class="fas fa-heart"></i> for beauty lovers</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Shopping Cart Sidebar -->
+        <div class="cart-sidebar" id="cartSidebar">
+            <div class="cart-header">
+                <h3>Shopping Cart</h3>
+                <button class="close-cart" id="closeCart"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items loaded dynamically -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">$0.00</span>
+                </div>
+                <button class="btn btn-primary btn-full" id="checkoutBtn">
+                    Checkout <i class="fas fa-lock"></i>
+                </button>
+            </div>
+        </div>
+        <div class="cart-overlay" id="cartOverlay"></div>
+
+        <!-- Search Modal -->
+        <div class="search-modal" id="searchModal">
+            <div class="search-content">
+                <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search products...">
+                </div>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
