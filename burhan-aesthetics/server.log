@@ -1,0 +1,12 @@
+🚀 Burhan'Aesthetics Server running on port 3000
+📦 Visit: http://localhost:3000
+🛍️  API Endpoints:
+   GET  /api/products - Get all products
+   GET  /api/products/:id - Get single product
+   POST /api/orders - Create new order
+   POST /api/contact - Submit contact form
+   POST /api/newsletter - Subscribe to newsletter
+   GET  /api/cart - Get cart
+   POST /api/cart/add - Add to cart
+   DELETE /api/cart/remove/:id - Remove from cart
+   PUT  /api/cart/update/:id - Update cart item
